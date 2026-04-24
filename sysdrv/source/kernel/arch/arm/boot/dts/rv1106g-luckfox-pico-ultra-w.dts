@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Copyright (c) 2022 Rockchip Electronics Co., Ltd.
+ *
+ * Luckfox Pico Ultra W - based on Luckfox Pico Ultra with WiFi (AIC8800DC)
+ */
+
+#include "rv1106g-luckfox-pico-ultra.dts"
+
+/ {
+	model = "Luckfox Pico Ultra W";
+};

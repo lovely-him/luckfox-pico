@@ -16,6 +16,10 @@ CONFIG_PLATFORM_UBUNTU = n
 
 MAKEFLAGS +=-j$(shell nproc)
 
+# Disable SDIO hardware power save: causes TX path to freeze during video streaming
+# (chip enters SDIO sleep and fails to wake up, producing continuous "write retry" in dmesg)
+MAKEFLAGS += CONFIG_SDIO_PWRCTRL=n
+
 ifeq ($(CONFIG_PLATFORM_ROCKCHIP), y)
 ARCH ?= arm
 CROSS_COMPILE ?= arm-rockchip830-linux-uclibcgnueabihf-

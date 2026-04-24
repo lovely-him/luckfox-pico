@@ -14,7 +14,7 @@ export RK_APP_TYPE=RKIPC_RV1106
 export RK_BOOTARGS_CMA_SIZE="66M"
 
 # Kernel dts
-export RK_KERNEL_DTS=rv1106g-luckfox-pico-ultra.dts
+export RK_KERNEL_DTS=rv1106g-luckfox-pico-ultra-w.dts
 
 #################################################
 #	BOOT_MEDIUM
@@ -111,8 +111,8 @@ export RK_ENABLE_WIFI=y
 export RK_ENABLE_WIFI_CHIP=AIC8800DC
 
 # config wifi ssid and passwd
-export LF_WIFI_SSID="Your wifi ssid"
-export LF_WIFI_PSK="Your wifi password"
+export LF_WIFI_SSID="mobile@sainFBB"
+export LF_WIFI_PSK="FBB3#sainMB"
 
 #################################################
 #  PRE and POST
